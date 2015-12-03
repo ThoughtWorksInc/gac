@@ -12,7 +12,7 @@ Para que o sistema de autenticação funcione apropriadamente, após a primeira 
 1. Adicione um Site para o seu domínio, respeitando o mesmo settings.SITE_ID (django.contrib.sites app).
 2. Para cada OAuth provider adicione um Social App (socialaccount app).
 
-Para mais informações, acesse a documentação de [instalação](http://django-allauth.readthedocs.org/en/latest/installation.html "Instalação do Django Allauth") e [configuração](http://django-allauth.readthedocs.org/en/latest/configuration.html, "Configuração do Django Allauth") da biblioteca [django-allauth](http://django-allauth.readthedocs.org/en/latest/ "Django Allauth").
+Para mais informações, acesse a documentação de [instalação](http://django-allauth.readthedocs.org/en/latest/installation.html "Instalação do Django Allauth") e [configuração](http://django-allauth.readthedocs.org/en/latest/configuration.html "Configuração do Django Allauth") da biblioteca [django-allauth](http://django-allauth.readthedocs.org/en/latest/ "Django Allauth").
 
 ## Configuração do ambiente de desenvolvimento
 
