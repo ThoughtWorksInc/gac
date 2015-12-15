@@ -1,5 +1,7 @@
 # gac
 
+[![Build Status](https://snap-ci.com/ThoughtWorksInc/gac/branch/master/build_image)](https://snap-ci.com/ThoughtWorksInc/gac/branch/master)
+
 ## Autenticação com credenciais Google
 
 A aplicação utiliza as credenciais Google do usuário, a mesma utilizada para o email. Para o cadastro e futuros acessos, escolha a opção para usar a conta Google.
