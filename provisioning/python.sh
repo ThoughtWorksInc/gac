@@ -28,3 +28,7 @@ virtualenv $VIRTUALENV_GAC
 chown -R vagrant:vagrant $VIRTUALENVS_HOME
 
 echo "source ${VIRTUALENV_GAC}/bin/activate" | tee -a /home/vagrant/.bashrc
+source ${VIRTUALENV_GAC}/bin/activate
+
+echo "pip install -r /vagrant/gac/requirements.txt"
+pip install -r /vagrant/gac/requirements.txt
