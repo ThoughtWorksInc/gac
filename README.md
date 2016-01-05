@@ -23,8 +23,13 @@ ambiente de desenvolvimento. Para iniciá-la:
 
 1. Instalar VirtualBox
 2. Instalar Vagrant
-3. Executar 'vagrant up' na raiz do projeto (demora um pouco)
-4. Executar 'vagrant ssh' para acessar a máquina virtual
+3. Rodar os seguintes comandos:
+    
+    ```
+    $ export SECRET_KEY=<informe a SECRET_KEY do Django>
+    $ export DATABASE_URL=<informe a string de conexão com o banco de dados>
+    $ vagrant up # Isso pode demorar ...
+    ```
 
 ### EditorConfig
 
