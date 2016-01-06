@@ -26,3 +26,5 @@ sudo apt-get -y upgrade
 
 source /vagrant/provisioning/postgresql.sh
 source /vagrant/provisioning/python.sh
+
+echo "cd /vagrant/gac/" >> /home/vagrant/.bashrc
