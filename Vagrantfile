@@ -13,7 +13,7 @@ def set_variable(config, variable_name, is_required)
 
   if value.to_s != ''
     config.vm.provision 'shell' do |s|
-      s.inline = "echo \"export #{variable_name}=#{value}\" | tee -a /home/vagrant/.bashrc"
+      s.inline = "echo export #{variable_name}=\"\'\"\'#{value.to_s}\'\"\'\" | tee -a /home/vagrant/.bashrc"
     end
   end
 end
