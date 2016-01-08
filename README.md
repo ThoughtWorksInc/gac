@@ -18,6 +18,8 @@ Para mais informações, acesse a documentação de [instalação](http://django
 
 ## Configuração do ambiente de desenvolvimento
 
+### Criando a máquina virtual com o ambiante + código
+
 Definimos uma máquina virtual configurada com Vagrant para ser utilizada como
 ambiente de desenvolvimento. Para iniciá-la:
 
@@ -29,6 +31,20 @@ ambiente de desenvolvimento. Para iniciá-la:
     $ export SECRET_KEY=<informe a SECRET_KEY do Django>
     $ export DATABASE_URL=<informe a string de conexão com o banco de dados>
     $ vagrant up # Isso pode demorar ...
+    ```
+
+### Validando o ambiente
+Para verificar se o ambiente inicializou corretamente, execute os testes utilizando o comando:
+
+    ```
+    $ ./manage.py test
+    ```
+    
+### Startando a aplicação
+Para startar a aplicação, executar o comando:
+
+    ```
+    $ ./manage.py runserver 0.0.0.0:8000
     ```
 
 ### EditorConfig
