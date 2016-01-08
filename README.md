@@ -18,6 +18,8 @@ Para mais informações, acesse a documentação de [instalação](http://django
 
 ## Configuração do ambiente de desenvolvimento
 
+### Criando a máquina virtual com o ambiante + código
+
 Definimos uma máquina virtual configurada com Vagrant para ser utilizada como
 ambiente de desenvolvimento. Para iniciá-la:
 
@@ -32,6 +34,20 @@ ambiente de desenvolvimento. Para iniciá-la:
     $ vagrant ssh # Acessa a maquina virtual criada pelo vagrant (onde a aplicação está)
     ```
 As informações sensíveis da aplicação são compartilhadas a través do [1Password](https://blog.agilebits.com/2015/11/03/introducing-1password-for-teams/). Para ter acesso a este cofre, faça uma solicitação através do link: https://gac-team.1password.com/teamjoin/invitation/ZP2FOBAYYVBEFBW5SLJTE2WIJA com o seu e-mail da TW.
+
+### Validando o ambiente
+Para verificar se o ambiente inicializou corretamente, execute os testes utilizando o comando:
+
+    ```
+    $ ./manage.py test
+    ```
+    
+### Startando a aplicação
+Para startar a aplicação, executar o comando:
+
+    ```
+    $ ./manage.py runserver 0.0.0.0:8000
+    ```
 
 ### EditorConfig
 
