@@ -38,16 +38,12 @@ As informações sensíveis da aplicação são compartilhadas a través do [1Pa
 ### Validando o ambiente
 Para verificar se o ambiente inicializou corretamente, execute os testes utilizando o comando:
 
-    ```
     $ ./manage.py test
-    ```
-    
+
 ### Startando a aplicação
 Para startar a aplicação, executar o comando:
 
-    ```
     $ ./manage.py runserver 0.0.0.0:8000
-    ```
 
 ### EditorConfig
 
