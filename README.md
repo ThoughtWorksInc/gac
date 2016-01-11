@@ -31,6 +31,7 @@ ambiente de desenvolvimento. Para iniciá-la:
     $ vagrant up # Isso pode demorar ...
     $ vagrant ssh # Acessa a maquina virtual criada pelo vagrant (onde a aplicação está)
     ```
+As informações sensíveis da aplicação são compartilhadas a través do [1Password](https://blog.agilebits.com/2015/11/03/introducing-1password-for-teams/). Para ter acesso a este cofre, faça uma solicitação através do link: https://gac-team.1password.com/teamjoin/invitation/ZP2FOBAYYVBEFBW5SLJTE2WIJA com o seu e-mail da TW.
 
 ### EditorConfig
 
