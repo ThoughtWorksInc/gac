@@ -24,6 +24,8 @@ Vagrant.configure(2) do |config|
   environment_variables = {
     'SECRET_KEY' => REQUIRED,
     'DATABASE_URL' => NOT_REQUIRED,
+    'GOOGLE_CLIENT_ID' => REQUIRED,
+    'GOOGLE_CLIENT_SECRET' => REQUIRED 
   }
 
   environment_variables.keys.each do |variable_name|

@@ -30,30 +30,24 @@ ambiente de desenvolvimento. Para iniciá-la:
     ```
     $ export SECRET_KEY=<informe a SECRET_KEY do Django>
     $ export DATABASE_URL=<informe a string de conexão com o banco de dados>
+    $ export GOOGLE_CLIENT_ID=<informe o ID da aplicação GAC do Google>
+    $ export GOOGLE_CLIENT_SECRET=<informe a chave secreta da aplicação GAC do Google>
     $ vagrant up # Isso pode demorar ...
     $ vagrant ssh # Acessa a maquina virtual criada pelo vagrant (onde a aplicação está)
     ```
-As informações sensíveis da aplicação são compartilhadas a través do [1Password](https://blog.agilebits.com/2015/11/03/introducing-1password-for-teams/). Para ter acesso a este cofre, faça uma solicitação através do link: https://gac-team.1password.com/teamjoin/invitation/ZP2FOBAYYVBEFBW5SLJTE2WIJA com o seu e-mail da TW.
+Importante: as informações sensíveis da aplicação são compartilhadas a través do [1Password](https://blog.agilebits.com/2015/11/03/introducing-1password-for-teams/). Para ter acesso a este cofre, faça uma solicitação através do link: https://gac-team.1password.com/teamjoin/invitation/ZP2FOBAYYVBEFBW5SLJTE2WIJA com o seu e-mail da TW.
 
-### Validando o ambiente
-Para verificar se o ambiente inicializou corretamente, execute os testes utilizando o comando:
+### Inicializando a aplicação
 
-    $ ./manage.py test
+Execute os seguintes comandos para inicialização da aplicação:
 
-### Startando a aplicação
-Para startar a aplicação, executar o comando:
-
+    $ ./manage.py makemigrations
+    $ ./manage.py migrate
+    $ ./manage.py createsuperuser
+    $ ./manage.py setgooglesecretkey    
+    $ ./manage.py test    
     $ ./manage.py runserver 0.0.0.0:8000
 
-### Validando o ambiente
-Para verificar se o ambiente inicializou corretamente, execute os testes utilizando o comando:
-
-    $ ./manage.py test
-
-### Startando a aplicação
-Para startar a aplicação, executar o comando:
-
-    $ ./manage.py runserver 0.0.0.0:8000
 
 ### EditorConfig
 
