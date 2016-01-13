@@ -28,10 +28,11 @@ ambiente de desenvolvimento. Para iniciá-la:
 3. Rodar os seguintes comandos:
     
     ```
-    $ export SECRET_KEY=<informe a SECRET_KEY do Django>
-    $ export DATABASE_URL=<informe a string de conexão com o banco de dados>
-    $ export GOOGLE_CLIENT_ID=<informe o ID da aplicação GAC do Google>
-    $ export GOOGLE_CLIENT_SECRET=<informe a chave secreta da aplicação GAC do Google>
+    $ export SECRET_KEY='<informe a SECRET_KEY do Django>'
+    $ export DATABASE_URL='<informe a string de conexão com o banco de dados>'
+    $ export GOOGLE_CLIENT_ID='<informe o ID da aplicação GAC do Google>'
+    $ export GOOGLE_CLIENT_SECRET='<informe a chave secreta da aplicação GAC do Google>'
+    $ export DEBUG='true'    
     $ vagrant up # Isso pode demorar ...
     $ vagrant ssh # Acessa a maquina virtual criada pelo vagrant (onde a aplicação está)
     ```
